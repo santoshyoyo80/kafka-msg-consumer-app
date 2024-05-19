@@ -1,9 +1,12 @@
+## kafka-msg-consumer-app
+This application developed to show how quickly kafka listeners are listening kafka's topic messages
 # Pre-requisite
-To run thid application you must have to run first zookeeper(2181) and then kafka server/broker(9092) and do the partion of the created topic otherwise default partion to
-be used by the kafka broker.
-
-# Java Version(1.8)
-
-# kafka-msg-consumer-app
-This application developed to show how quickly kafka listeners are listening kafka's topic messages 
-
+Before running this application make sure you already have kafka cluster setup via docker containers.
+### To setup kafka environment lets install following on mac
+<b>brew install docker docker-compose colima</b><br>
+<b>start colima </b>
+### Make clone of this repository on your system
+<b>git clone https://github.com/santoshyoyo80/kafka-msg-consumer-app</b><br>
+<b>cd kafka-msg-consumer-app</b>
+<b>colima start</b>
+### Java Version(1.8)
