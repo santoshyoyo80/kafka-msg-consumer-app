@@ -1,0 +1,22 @@
+server:
+  port: 8066
+#Kafka Properties
+spring:
+  kafka:
+    bootstrap-servers : localhost:9092
+    topic-name : emps
+logging:
+  level:
+    root: INFO
+    org.springframework.web: ERROR
+
+#This is for Eureka Server properties
+#server:
+  #port: ${PORT:8761}
+
+#eureka:
+  #client:
+    #registerWithEureka: false
+    #fetchRegistry: false
+    #server:
+      #waitTimeInMsWhenSyncEmpty: 0
