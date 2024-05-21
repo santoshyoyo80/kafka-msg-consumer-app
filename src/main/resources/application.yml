@@ -4,7 +4,7 @@ server:
 spring:
   kafka:
     bootstrap-servers : localhost:9092
-    topic-name : emps
+    topic-name : app-events
 logging:
   level:
     root: INFO

@@ -13,7 +13,8 @@ import org.springframework.stereotype.Component;
 public class KafkaConsumerLister {
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaConsumerLister.class);
     @KafkaListener(topics = "${spring.kafka.topic-name}")
-    public void onKafkaMessage(@Payload String paload){
-        LOGGER.info("Kafka consumer received payload {} "+paload);
+    public void onKafkaMessage(@Payload String payload){
+        System.out.println("The payload received from kafka->"+payload);
+        LOGGER.info("Kafka consumer received payload {} "+payload);
     }
 }
